@@ -8,8 +8,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
-    MovieDetails: typeof import('./components/MovieDetails.vue')['default']
     MovieList: typeof import('./components/MovieList.vue')['default']
     MovieListItem: typeof import('./components/MovieListItem.vue')['default']
     MovieSearch: typeof import('./components/MovieSearch.vue')['default']

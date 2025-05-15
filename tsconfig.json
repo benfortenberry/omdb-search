@@ -1,6 +1,5 @@
 {
   "files": [],
-  "allowImportingTsExtensions": true,
   "references": [
     {
       "path": "./tsconfig.node.json"
