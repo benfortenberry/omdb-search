@@ -11,6 +11,16 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  test: {
+    globals: true,
+    environment: 'jsdom', // or 'happy-dom'
+    server: {
+      deps: {
+        inline: ['vuetify']
+      }
+    }
+  },
+
   plugins: [
     VueRouter({
       dts: 'src/typed-router.d.ts',
@@ -40,6 +50,7 @@ export default defineConfig({
       },
     }),
   ],
+
   optimizeDeps: {
     exclude: [
       'vuetify',
